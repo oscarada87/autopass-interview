@@ -18,5 +18,7 @@ module AutopassInterview
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.eager_load_paths += Dir['use_cases']
+
   end
 end
